@@ -56,11 +56,11 @@ while(True):
 
 		#print filePath
 
-	rando = random.randint(2000,3000)
-	filenameout = "BurpOutput %s" % rando
+	#rando = random.randint(2000,3000)
+	#filenameout = "BurpOutput %s" % rando
 
 
-	outfile = open("%s.csv" % filenameout,"wb")
+	outfile = open("burpOutput.csv","wb")
 	writer = csv.writer(outfile)
 	writer.writerow(["Name","Host","IP","Path","Severity","Confidence","Issue Background","Remediation Background","Vulnerability Classification", "Issue Details", "Request", "Response"])
 	writer.writerows(issueOutput)
